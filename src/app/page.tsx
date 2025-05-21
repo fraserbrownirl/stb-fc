@@ -1,7 +1,9 @@
+
 import { Header } from '@/components/custom/Header';
 import { SolutionExplanationSection } from '@/components/custom/SolutionExplanationSection';
 import { GamePreviewSection } from '@/components/custom/GamePreviewSection';
 import { TeamSection } from '@/components/custom/TeamSection';
+import { ContactUsSection } from '@/components/custom/ContactUsSection';
 import { Footer } from '@/components/custom/Footer';
 import { Button } from '@/components/ui/button';
 import { ArrowDown } from 'lucide-react';
@@ -30,7 +32,7 @@ export default function HomePage() {
                 <a href="#solution">Learn More <ArrowDown className="ml-2 h-5 w-5"/></a>
               </Button>
               <Button size="lg" variant="outline" className="border-primary text-primary hover:bg-primary/10" asChild>
-                <a href="#team">Meet the Team</a>
+                <a href="#contact-us">Contact Us</a>
               </Button>
             </div>
           </div>
@@ -39,6 +41,7 @@ export default function HomePage() {
         <SolutionExplanationSection />
         <GamePreviewSection />
         <TeamSection />
+        <ContactUsSection />
       </main>
       <Footer />
     </div>
